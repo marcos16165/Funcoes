@@ -6,19 +6,6 @@ using namespace std;
 int **M, n, maior, aux ;
 
 
-void MostraMaior(int linha, int col, int **matriz){
-	maior = matriz[0][0];
-	for(int i=0; i<linha; i++){
-		for(int j=0; j<col; j++){
-			if(maior < matriz[i][j]){
-				maior = matriz[i][j];
-			}
-	  }	
-}
-	cout<<"O maior elemento é: "<<maior<<endl;
-    }
-
-
 int **GeraMatriz(int linha, int col, int **matriz){
 	for(int i = 0; i < linha; i++)
 		matriz = (int**)malloc(linha * sizeof(int));
