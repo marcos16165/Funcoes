@@ -30,6 +30,7 @@ void LiberaMatriz(int linha, int **matriz){
 		free(matriz[i]);
 	free(matriz);
 }
+
 void MostraMatriz(int linha, int col, int **matriz){
 	cout<< endl <<"======MATRIZ======" << endl;
 	for(int i=0; i<linha; i++){
