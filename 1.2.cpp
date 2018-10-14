@@ -17,8 +17,7 @@ int *EntraVetor(int tam, int *vetor){
     cout<<"Digite o valor da posição "<<j+1<<": ";
     cin>>vetor[j];}
     while (vetor[j] < 0);
-	}
-          
+	}          
     return vetor;
 }
 
