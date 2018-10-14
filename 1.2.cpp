@@ -14,21 +14,24 @@ int *EntraVetor(int tam, int *vetor){
     for(int j=0; j<tam; j++){
     maior = 0;
     do {
-    cout<<"Digite o valor da posição "<<j+1<<": ";
+    cout<<"Digite o valor da posiÃ§Ã£o "<<j+1<<": ";
     cin>>vetor[j];}
     while (vetor[j] < 0);
 	}
           
     return vetor;
 }
-	
+
 void MostraMaiorePos(int tam, int *vetor){
-	maior = vetor[0];	
+	maior = vetor[0];
+	posicao = 0;	
 	for(int j=0; j<tam; j++){
-		if(vetor[j]> maior) maior = vetor[j];
-		posicao = vetor[j];
+		if(vetor[j]> maior){ 
+		maior = vetor[j];
+		posicao = j;
+		}
 	}
-	cout<<"O maior elemento é: "<<maior <<"\nNa posição: "<< posicao <<endl;
+	cout<<"O maior elemento e: "<<maior <<"\nNa posicao: "<< posicao + 1 <<endl;
     }
 
 void MostraVetor(int tam, int *vetor){
