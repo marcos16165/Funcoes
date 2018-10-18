@@ -21,7 +21,6 @@ void MostraMaior(int linha, int col, int **matriz)
 	cout << "O maior elemento ?: " << maior << endl;
 }
 
-
 int **GeraMatriz(int linha, int col, int **matriz)
 {
 	matriz = (int**)malloc(col * sizeof(int));
