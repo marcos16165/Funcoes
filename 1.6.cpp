@@ -97,7 +97,6 @@ int **pmatriz(int **M1, int **M2, int **MP)
 			LiberaMatriz(n1, MP); 
 		}else{
 			cout << "erro"<<endl;}
-		MostraMatriz(n1, m1, M1);
 
 		LiberaMatriz(n1, M1);
 		LiberaMatriz(n2, M2);
