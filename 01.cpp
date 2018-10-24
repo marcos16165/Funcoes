@@ -52,8 +52,7 @@ int main()
     V =EntraVetor(n,V);
     MostraVetor(n,V);
     MostraMaior(n,V);
-    MostraMenor(n,V);
-    
+    MostraMenor(n,V);    
     free(V);
     return 0;
 }
