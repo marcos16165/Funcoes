@@ -13,7 +13,7 @@ int *GeraVetor(int tam, int *vetor){
 
 int *EntraVetor(int tam, int *vetor){
 	for(int j=0; j<tam; j++){
-		cout<<"Digite o valor da posição: "<<j+1<<": ";
+		cout<<"Digite o valor da posiÃ§Ã£o: "<<j+1<<": ";
 		cin>>vetor[j];
 		}
 		return vetor;	
@@ -24,7 +24,7 @@ void MostraMaior(int tam, int *vetor){
 	for(int j=0; j<tam; j++){
 		if(vetor[j]>maior) maior = vetor[j];
 	}
-	cout <<"O maior elemento do vetor é: "<<maior<<endl;
+	cout <<"O maior elemento do vetor Ã©: "<<maior<<endl;
 }
 
 int main(){
