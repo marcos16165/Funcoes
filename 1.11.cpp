@@ -1,3 +1,7 @@
+//Obs:Como a matriz e os vetor são estáticos, não transformei em função. 
+
+
+
 #include <iostream>
 
 using namespace std;
