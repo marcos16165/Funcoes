@@ -17,7 +17,7 @@ void MostraMaior(int linha, int col, int **matriz)
 			}
 		}
 	}
-	cout << "O maior elemento é: " << maior << endl;
+	cout << "O maior elemento Ã©: " << maior << endl;
 }
 
 
