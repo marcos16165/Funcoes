@@ -1,39 +1,49 @@
+//a. Alocação dinâmica de um vetor para números reais; 
+float *AlocaVetor(int tam, float *V)
+{
+	V = (float*)malloc(tam * sizeof(float))
+		return V;
+}
+
+//b. Alocação dinâmica de uma matriz de números inteiros; 
+for(int i = 0; i < n; i++)
+	M = (int)malloc(n*sizeof(int));
+for(int j = 0; j < n; j++)
+	M[j] = (int)malloc(n*sizeof(int));
+
+//c. Uma função (útil – seja criativo) que utilize o vetor do item “a” e retorne o mesmo para uso. 
 #include <iostream>
-#include <math.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 using namespace std;
 
-int *A, n, maior;
-
-int *GeraVetor(int tam, int *vetor){
-	vetor=(int*)malloc(tam*sizeof(int));
-	return vetor;
-}
-
-int *EntraVetor(int tam, int *vetor){
-	for(int j=0; j<tam; j++){
-		cout<<"Digite o valor da posiÃ§Ã£o: "<<j+1<<": ";
-		cin>>vetor[j];
-		}
-		return vetor;	
-	}
-	
-void MostraMaior(int tam, int *vetor){
-	maior = vetor[0];
-	for(int j=0; j<tam; j++){
-		if(vetor[j]>maior) maior = vetor[j];
-	}
-	cout <<"O maior elemento do vetor Ã©: "<<maior<<endl;
-}
-
+double *V, n, soma=0, media;
 int main(){
-	cout << "Qual o tamanho do vetor? ";
-	cin>> n;
-	A = GeraVetor(n,A);
-	A = EntraVetor(n,A);
-	MostraMaior(n,A);
+cout<<"========== MEDIA DAS NOTAS DE UM ALUNO =========="<<endl;	
+
+cout<<"Quantas notas deseja armazenar? ";
+cin>> n;
+V=(double*)malloc(n*sizeof(double));
+
+for(int j=0; j<n; j++){
+	cout<<"Qual foi notas "<<j+1<<" do aluno: ";
+	cin>>V[j];
 	
-	free(A);
-	return 0;
 	}
+	
+for(int j=0; j<n; j++){
+	soma+= V[j];
+	media = soma/n;}
+	cout <<"A media das notas e: " <<media<<endl;
+
+	
+for (int j=0; j<n; j++){
+	if(j==0) cout<<"V=["<<V[j]<<", "; else
+		if(j<n-1) cout<<V[j]<<", "; else
+			cout<<V[j]<<"]"<<endl;
+	}
+	
+	free(V);
+	return 0;
+}
+
