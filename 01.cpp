@@ -1,7 +1,6 @@
 #include <iostream>
 #include <math.h>
 #include <stdlib.h>
-
 using namespace std;
 int *V, n, maior, menor;
 
