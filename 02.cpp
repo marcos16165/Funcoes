@@ -18,7 +18,6 @@ int *EntraVetor(int tam, int *vetor){
     while (vetor[j] < 0);
 	}
           
-
     return vetor;
 }
 
