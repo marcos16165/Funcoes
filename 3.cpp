@@ -1,17 +1,17 @@
-//a. Alocação dinâmica de um vetor para números reais; 
+//a. AlocaÃ§Ã£o dinÃ¢mica de um vetor para nÃºmeros reais; 
 float *AlocaVetor(int tam, float *V)
 {
 	V = (float*)malloc(tam * sizeof(float))
 		return V;
 }
 
-//b. Alocação dinâmica de uma matriz de números inteiros; 
+//b. AlocaÃ§Ã£o dinÃ¢mica de uma matriz de nÃºmeros inteiros; 
 for(int i = 0; i < n; i++)
 	M = (int)malloc(n*sizeof(int));
 for(int j = 0; j < n; j++)
 	M[j] = (int)malloc(n*sizeof(int));
 
-//c. Uma função (útil – seja criativo) que utilize o vetor do item “a” e retorne o mesmo para uso. 
+//c. Uma funÃ§Ã£o (Ãºtil â€“ seja criativo) que utilize o vetor do item â€œaâ€ e retorne o mesmo para uso. 
 #include <iostream>
 #include <stdlib.h>
 
